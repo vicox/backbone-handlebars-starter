@@ -1,0 +1,17 @@
+{
+  "name": "hello-app",
+  "version": "0.0.0",
+  "authors": [
+    "Georg Schmidl <georg.schmidl@vicox.net>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "requirejs-text": "~2.0.13",
+    "jquery": "~2.1.3",
+    "backbone": "~1.1.2",
+    "handlebars": "~2.0.0",
+    "bootstrap": "~3.3.2"
+  }
+}
