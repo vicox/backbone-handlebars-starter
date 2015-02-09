@@ -1,4 +1,4 @@
-define(['backbone'], function(Backbone) {
+define(['backbone', 'app/views/home'], function(Backbone, HomeView) {
 
     return Backbone.Router.extend({
         routes: {
@@ -6,9 +6,7 @@ define(['backbone'], function(Backbone) {
         },
 
         home: function() {
-            require(["app/views/home"], function (HomeView) {
-                new HomeView().render();
-            });
+            new HomeView().render();
         }
     });
 

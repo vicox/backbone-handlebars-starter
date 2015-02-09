@@ -40,7 +40,14 @@ module.exports = function(grunt) {
         },
         uglify: {
             dist: {
-                files: [{ expand: true, cwd: 'js', src: 'require.js', dest: 'dist/js' }]
+                options: {
+                    preserveComments: 'some'
+                },
+                files: [
+                    { expand: true, cwd: 'js', src: 'require.js', dest: 'dist/js' },
+                    { expand: true, cwd: 'js/app', src: '**/*.js', dest: 'dist/js/app' },
+                    { expand: true, cwd: 'js/lib', src: '**/*.js', dest: 'dist/js/lib' }
+                ]
             }
         },
         requirejs: {
@@ -49,8 +56,7 @@ module.exports = function(grunt) {
                     baseUrl: 'js/lib',
                     mainConfigFile: "js/app.js",
                     name: "app",
-                    out: "dist/js/app.js",
-                    findNestedDependencies: true
+                    out: "dist/js/app.js"
                 }
             }
         },
