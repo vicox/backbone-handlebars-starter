@@ -1,7 +1,7 @@
 {
-  "name": "hello-app",
+  "name": "backbone-handlebars-starter",
   "version": "0.0.0",
-  "author": "Georg Schmidl <georg.schmidl@vicox.net>",
+  "author": "Georg Schmidl <georg.schmidl@gmail.com>",
   "license": "MIT",
   "private": true,
   "devDependencies": {
